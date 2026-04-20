@@ -1,0 +1,73 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+}
+
+.iconWrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.primary .iconWrapper {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.success .iconWrapper {
+  background: var(--color-success-light);
+  color: var(--color-success);
+}
+
+.warning .iconWrapper {
+  background: var(--color-warning-light);
+  color: var(--color-warning);
+}
+
+.error .iconWrapper {
+  background: var(--color-error-light);
+  color: var(--color-error);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.trend {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-top: var(--space-xs);
+}
+
+.trend.up {
+  color: var(--color-success);
+}
+
+.trend.down {
+  color: var(--color-error);
+}
